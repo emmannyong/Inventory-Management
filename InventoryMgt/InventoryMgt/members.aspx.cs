@@ -6,14 +6,14 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 
-namespace BugTrack
+namespace InventoryMgt
 {
     public partial class members : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             string connectionInfo = string.Format("server={0};user id={1};password={2};database={3};charset=utf8;",
-                "localhost", "root", "", "bugrack");
+                "localhost", "root", "", "medstore");
             using (var connection = new MySqlConnection(connectionInfo))
             {
                 connection.Open();

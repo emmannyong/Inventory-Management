@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BugTrack {
+namespace InventoryMgt {
     
     
     public partial class members {

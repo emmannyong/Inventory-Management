@@ -24,7 +24,7 @@ namespace BugTrack
             string rl = role.Text;
 
             string connectionInfo = string.Format("server={0};user id={1};password={2};database={3};charset=utf8;",
-                "localhost", "root", "", "bugrack");
+                "localhost", "root", "", "medstore");
             using (var connection = new MySqlConnection(connectionInfo))
             {
                 connection.Open();

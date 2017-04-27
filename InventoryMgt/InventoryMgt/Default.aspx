@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PreLogMaster.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BugTrack.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PreLogMaster.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="InventoryMgt.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

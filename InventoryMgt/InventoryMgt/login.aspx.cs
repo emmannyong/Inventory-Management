@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 
-namespace BugTrack
+namespace InventoryMgt
 {
     public partial class login : System.Web.UI.Page
     {
@@ -25,7 +25,7 @@ namespace BugTrack
             string pw = pass.Text;
 
             string connectionInfo = string.Format("server={0};user id={1};password={2};database={3};charset=utf8;",
-                "localhost", "root", "", "bugrack");
+                "localhost", "root", "", "medstore");
             using (var connection = new MySqlConnection(connectionInfo))
             {
                 connection.Open();

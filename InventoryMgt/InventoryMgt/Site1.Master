@@ -28,10 +28,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/projects.aspx">Store</a>
+                        <a href="/stores.aspx">Store</a>
                     </li>
                     <li>
-                        <a href="/bugs.aspx">Products</a>
+                        <a href="/allstock.aspx">Products</a>
                     </li>
                     <li>
                         <a href="/members.aspx">Members</a>

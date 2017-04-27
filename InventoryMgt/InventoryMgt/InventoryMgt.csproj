@@ -118,6 +118,7 @@
   <ItemGroup>
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\calendar-blue.css" />
     <Content Include="Content\css\shop-homepage.css" />
     <Content Include="Content\p1.jpg" />
     <Content Include="Content\p2.jpg" />
@@ -126,6 +127,11 @@
     <Content Include="Default.aspx" />
     <Content Include="login.aspx" />
     <Content Include="members.aspx" />
+    <Content Include="scripts\calendar-en.min.js" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <Content Include="scripts\jquery.dynDateTime.min.js" />
+    <Content Include="stocks.aspx" />
+    <Content Include="stores.aspx" />
     <Content Include="register.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
@@ -162,6 +168,20 @@
     </Compile>
     <Compile Include="PreLogMaster.Master.designer.cs">
       <DependentUpon>PreLogMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="stocks.aspx.cs">
+      <DependentUpon>stocks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stocks.aspx.designer.cs">
+      <DependentUpon>stocks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stores.aspx.cs">
+      <DependentUpon>stores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stores.aspx.designer.cs">
+      <DependentUpon>stores.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="register.aspx.cs">

@@ -10,16 +10,16 @@
 namespace InventoryMgt {
     
     
-    public partial class login {
+    public partial class stores {
         
         /// <summary>
-        /// LiteralText control.
+        /// LiteralMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal LiteralText;
+        protected global::System.Web.UI.WebControls.Literal LiteralMsg;
         
         /// <summary>
         /// form1 control.
@@ -31,22 +31,13 @@ namespace InventoryMgt {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// user control.
+        /// PrNam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox user;
-        
-        /// <summary>
-        /// pass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pass;
+        protected global::System.Web.UI.WebControls.TextBox PrNam;
         
         /// <summary>
         /// Button1 control.
@@ -56,5 +47,14 @@ namespace InventoryMgt {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
+        /// LiteralText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal LiteralText;
     }
 }
