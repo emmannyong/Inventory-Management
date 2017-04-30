@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 
 namespace InventoryMgt
 {
-    public partial class bugs : System.Web.UI.Page
+    public partial class stocks : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -52,8 +52,8 @@ namespace InventoryMgt
                                     HttpUtility.HtmlEncode(reader.GetString(3)),
                                     HttpUtility.HtmlEncode(reader.GetString(4)),
                                     HttpUtility.HtmlEncode(reader.GetString(5)),
-                                    HttpUtility.HtmlEncode(reader.GetString(6)),
-                                    HttpUtility.HtmlEncode(reader.GetString(7))
+                                    HttpUtility.HtmlEncode(reader.GetString(7)),
+                                    HttpUtility.HtmlEncode(reader.GetString(6))
                                     );
                                 LiteralText.Text += "<td><a class='btn btn-warning btn-sm' href='product.aspx?item=" + reader.GetString(0) + "&store=" + reader.GetString(2) + "'>View</a></td></ tr >";
                             }
@@ -76,11 +76,10 @@ namespace InventoryMgt
             stoc = stock.Text;
             cp = cost.Text;
             sp = sale.Text;
-            DateTime dex = DateTime.Parse(exp.Text);
-            expir = dex.ToString();
+            expir = exp.Text;
             
             string connectionInfo = string.Format("server={0};user id={1};password={2};database={3};charset=utf8;",
-                "localhost", "root", "", "bugrack");
+                "localhost", "root", "", "medstore");
             using (var connection = new MySqlConnection(connectionInfo))
             {
                 connection.Open();
@@ -96,12 +95,12 @@ namespace InventoryMgt
                 if (command.ExecuteNonQuery() > 0)
                 {
                     LiteralMsg.Text += "<div class='alert alert-success'> Success! " +
-                        "Bug Added Successfully.</ div > ";
+                        "Stock Product Added Successfully.</ div > ";
                 }
                 else
                 {
                     LiteralMsg.Text += "<div class='alert alert-danger'> Error! " +
-                        "Failed To Add Bug. Please Try Again.</ div > ";
+                        "Failed To Add Stock Product. Please Try Again.</ div > ";
                 }
             }
         }

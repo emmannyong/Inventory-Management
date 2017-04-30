@@ -10,7 +10,7 @@
 namespace InventoryMgt {
     
     
-    public partial class stocks {
+    public partial class product1 {
         
         /// <summary>
         /// LiteralMsg control.
@@ -22,31 +22,40 @@ namespace InventoryMgt {
         protected global::System.Web.UI.WebControls.Literal LiteralMsg;
         
         /// <summary>
-        /// form1 control.
+        /// form3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form3;
         
         /// <summary>
-        /// pname control.
+        /// rspid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pname;
+        protected global::System.Web.UI.WebControls.TextBox rspid;
         
         /// <summary>
-        /// stock control.
+        /// rspn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox stock;
+        protected global::System.Web.UI.WebControls.TextBox rspn;
+        
+        /// <summary>
+        /// rsst control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox rsst;
         
         /// <summary>
         /// store control.
@@ -58,48 +67,39 @@ namespace InventoryMgt {
         protected global::System.Web.UI.WebControls.DropDownList store;
         
         /// <summary>
-        /// cost control.
+        /// newSt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox cost;
+        protected global::System.Web.UI.WebControls.TextBox newSt;
         
         /// <summary>
-        /// sale control.
+        /// Button3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox sale;
+        protected global::System.Web.UI.WebControls.Button Button3;
         
         /// <summary>
-        /// exp control.
+        /// LiteralGo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox exp;
+        protected global::System.Web.UI.WebControls.Literal LiteralGo;
         
         /// <summary>
-        /// Button1 control.
+        /// LiteralInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-        
-        /// <summary>
-        /// LiteralText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal LiteralText;
+        protected global::System.Web.UI.WebControls.Literal LiteralInfo;
     }
 }

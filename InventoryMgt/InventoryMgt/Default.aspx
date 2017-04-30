@@ -16,6 +16,7 @@
                                 <img style="height:500px" class="img-responsive slide-image" src="Content/p1.jpg" alt="" />
                             </div>
                             <div class="item">
+
                                 <img style="height:500px" class="img-responsive slide-image" src="Content/p3.jpg" alt="" />
                             </div>
                             <div class="item">

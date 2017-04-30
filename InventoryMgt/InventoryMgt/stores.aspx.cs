@@ -17,7 +17,7 @@ namespace InventoryMgt
             using (var connection = new MySqlConnection(connectionInfo))
             {
                 connection.Open();
-                var command = new MySqlCommand("Select * From stores;", connection);
+                var command = new MySqlCommand("Select * From store;", connection);
                 using (MySqlDataReader reader = command.ExecuteReader())
                 {
                     if (reader.HasRows)
@@ -30,7 +30,7 @@ namespace InventoryMgt
                                 HttpUtility.HtmlEncode(reader.GetString(1)),
                                 HttpUtility.HtmlEncode(reader.GetString(2))
                                 );
-                            LiteralText.Text += "<td><a class='btn btn-sm btn-primary' href='stock.aspx?item=" + reader.GetString(1) + "'>Stock</a></td></ tr >";
+                            LiteralText.Text += "<td><a class='btn btn-sm btn-primary' href='stocks.aspx?item=" + reader.GetString(1) + "'>Stock</a></td></ tr >";
                         }
                         LiteralText.Text += "</table>";
                     }

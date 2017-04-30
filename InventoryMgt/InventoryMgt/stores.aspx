@@ -15,7 +15,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse1">Add New Store</a>
+                    <a data-toggle="collapse" href="#collapse1">Add New Store Category</a>
                   </h4>
                 </div>
                 <div id="collapse1" class="panel-collapse collapse">
@@ -45,7 +45,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#">Bug Track Projects</a>
+                    <a data-toggle="collapse" href="#">Store Categories</a>
                   </h4>
                 </div>
                 <div id="collapse2" class="panel-collapse collapse in">

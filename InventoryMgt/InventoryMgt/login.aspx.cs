@@ -43,7 +43,7 @@ namespace InventoryMgt
                                 "Login Successful.</ div > ";
                             Session.Add("username", un);
                             Session.Add("password", pw);
-                            Response.Redirect("/projects.aspx");
+                            Response.Redirect("/stores.aspx");
                         }
                         else
                         {
