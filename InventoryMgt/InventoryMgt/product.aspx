@@ -37,7 +37,7 @@
                         </div>
                         <div class="form-group col-md-2">
                             <label for="email">Action:</label><br />
-                            <asp:DropDownList CssClass="form-control" required ID="act" runat="server"
+                            <asp:DropDownList CssClass="form-control" required="" ID="act" runat="server"
                                   AppendDataBoundItems="true">
                             <asp:ListItem Value="">Select</asp:ListItem>
                             <asp:ListItem Value="add">Add</asp:ListItem>
@@ -46,12 +46,12 @@
                             </asp:DropDownList>
                         </div>
                         <div class="form-group col-md-5">
-                            <label for="email">Incoming Quantity</label>
+                            <label for="email">Out/Incoming Quantity</label>
                             <asp:TextBox ID="newSt" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                         <div class="form-group col-md-6">
                             <br />
-                            <asp:Button ID="Button3" CssClass="btn btn-primary col-lg-12" runat="server" Text="ReStock Product" OnClick="Button1_Click" />
+                            <asp:Button ID="Button3" CssClass="btn btn-primary col-lg-12" runat="server" Text="Update Product Stock" OnClick="Button1_Click" />
                         </div>
                       </form>
                   </div>

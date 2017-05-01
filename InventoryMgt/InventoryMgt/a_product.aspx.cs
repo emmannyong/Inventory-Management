@@ -49,7 +49,12 @@ namespace InventoryMgt
                 cost.Text = cp;
                 //sale.Text = sp;
                 exp.Text = expd;
-
+                LiteralInfo.Text = "<p class='col-md-6'>Name:  " + Pname
+                + "</p><p class='col-md-6'>Current Stock:  " + stoc
+                + "</p><p class='col-md-6'>Cost Price:  " + cp
+                + "</p><p class='col-md-6'>Sale Price:  " + sp
+                + "</p><p class='col-md-6'>Expiry Date:  " + expd
+                + "</p><p class='col-md-12 text-center'>From The Store:  " + stor + "</p>";
             }       
         }
         
