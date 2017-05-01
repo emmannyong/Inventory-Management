@@ -17,7 +17,7 @@ namespace InventoryMgt
             string prod = Request.QueryString["item"];
             string str = Request.QueryString["store"];
 
-            string Pid = "", Pname = "", stor = "", stoc = "", cp = "", sp = "", expd = "", em = "";
+            string Pid = "", Pname = "", stor = "", stoc = "", cp = "", sp = "", expd = "";
             using (var connection = new MySqlConnection(connectionInfo))
             {
                 connection.Open();
@@ -44,7 +44,7 @@ namespace InventoryMgt
             rspn.Text = Pname;
             rsst.Text = stoc;
 
-            LiteralInfo.Text += "<p class='col-md-6'>Name:  " + Pname 
+            LiteralInfo.Text = "<p class='col-md-6'>Name:  " + Pname 
                 + "</p><p class='col-md-6'>Current Stock:  " + stoc
                 + "</p><p class='col-md-6'>Cost Price:  " + cp
                 + "</p><p class='col-md-6'>Sale Price:  " + sp
@@ -52,47 +52,32 @@ namespace InventoryMgt
                 + "</p><p class='col-md-12 text-center'>From The Store:  " + stor + "</p>"
                 + "<br><a class='col-md-12 btn btn-success btn-md' target='_blank' href='a_product.aspx?item=" + Pid + "'> Update Informstion</a><br />";
 
-            LiteralGo.Text += "<a class='btn btn-info btn-md' target='_blank' href='stocks.aspx?item=" + stor + "'> Back To Store</a><br />"
+            LiteralGo.Text = "<a class='btn btn-info btn-md' target='_blank' href='stocks.aspx?item=" + stor + "'> Back To Store</a><br />"
                 + "<p>At >> " + stor + "</p>";
         }
         
-        public String getPRBase(string x)
-        {
-            string pbase = "";
-            using (var connection = new MySqlConnection(connectionInfo))
-            {
-                connection.Open();
-                var command = new MySqlCommand("Select psrc From projects WHERE pname='" + x + "';", connection);
-                using (MySqlDataReader reader = command.ExecuteReader())
-                {
-                    if (reader.HasRows)
-                    {
-                        while (reader.Read())
-                        {
-                            pbase = reader.GetString(0);
-                        }
-                    }
-                    return pbase;
-                }
-            }
-        }
+        
         
         protected void Button1_Click(object sender, EventArgs e)
         {
             string pid = "", pn = "", newst = "", st = "", action = "";
-            int tot = 0;
+            int tot = 200;
             pid = rspid.Text;
             pn = rspn.Text;
             newst = newSt.Text;
             st = rsst.Text;
+            action = act.SelectedValue;
+            
+            
             if (action.Equals("add")) { tot = int.Parse(st) + int.Parse(newst); }
-            else if (action.Equals("deduct") && int.Parse(st) > int.Parse(newst)) { tot = int.Parse(st) - int.Parse(newst); }
+            else if (action.Equals("deduct") && int.Parse(st) >= int.Parse(newst)) { tot = int.Parse(st) - int.Parse(newst); }
             else { tot = int.Parse(st); }
-
+            
+            LiteralMsg.Text += tot.ToString();
             using (var connection = new MySqlConnection(connectionInfo))
             {
                 connection.Open();
-                var command = new MySqlCommand("Update stock SET stock='?U' " +
+                var command = new MySqlCommand("UPDATE stock SET stock=?U " +
                     "WHERE `id`=?D;", connection);
                 command.Parameters.AddWithValue("?U", tot.ToString());
                 command.Parameters.AddWithValue("?D", pid);

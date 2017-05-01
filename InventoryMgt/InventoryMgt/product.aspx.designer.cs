@@ -58,13 +58,13 @@ namespace InventoryMgt {
         protected global::System.Web.UI.WebControls.TextBox rsst;
         
         /// <summary>
-        /// store control.
+        /// act control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList store;
+        protected global::System.Web.UI.WebControls.DropDownList act;
         
         /// <summary>
         /// newSt control.
